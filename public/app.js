@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 $(document).ready(function(){
     $.getJSON("/api/todos")
     .then(addTodos)
